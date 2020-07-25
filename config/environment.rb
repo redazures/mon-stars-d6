@@ -1,7 +1,5 @@
 require 'bundler/setup'
-require 'colorize'
 Bundler.require
-require_all 'app'
 
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
@@ -9,3 +7,5 @@ ActiveRecord::Base.establish_connection(
 )
 
 ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+require_all 'app'
