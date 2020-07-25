@@ -1,3 +1,5 @@
-# mon-stars-d6
-mon-stars-d6
-You will respect this game
+# AR-Environment-Skeleton
+
+You can use this repo to build new Activerecord projects
+
+* You will need to create your own app/models directories
