@@ -1,0 +1,22 @@
+g1=Dungeon.create(name:"goblin_cave",pressure:0,des:"there are many globlins in this cave",location:"south",wet:true)
+r1= Room.create(name:"entrance",size:9,light:5,des:"this is the entrance of the cave.")
+r2= Room.create(name:"corridor_to_north",size:3,light:3,des:"the corridor is dim and stretches a few paces forward")
+r3= Room.create(name:"central_room",size:50,light:8,des:"this is a big room filled with")
+r4 =Room.create(name:"treasure_room",size:3,light:8,des:"there is some treasures in this room")
+g1.rooms<<r1
+g1.rooms<<r2
+g1.rooms<<r3
+g1.rooms<<r4
+
+
+g2=Dungeon.create(name:"treasure_cave",pressure:0,des:"this dungeon appears to be filled with treasures",location:"north",wet:false)
+r5= Room.create(name:"entrance",size:9,light:5,des:"there are many steps in this cave")
+r6= Room.create(name:"corridor_to_north",size:3,light:3,des:"the corridor is dim and stretches a few paces forward")
+r7= Room.create(name:"central_room",size:50,light:8,des:"this appears to be a big room with two passage ways on the other side")
+r8 =Room.create(name:"treasure_room",size:10,light:8,des:"you seem to have entered a treasure room")
+r9 =Room.create(name:"treasure_room",size:3,light:8,des:"this is a treasure room for ants")
+g2.rooms<<r5
+g2.rooms<<r6
+g2.rooms<<r7
+g2.rooms<<r8
+g2.rooms<<r9
