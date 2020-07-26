@@ -25,7 +25,7 @@ class Monster < ActiveRecord::Base
             d 
         elsif d.rooms.select{|x|x.monster_id!=nil}.empty?
             d= false
-        elsif 
+        else 
             d= true
         end 
         d
@@ -53,6 +53,10 @@ class Monster < ActiveRecord::Base
             self.which_room.each {|r| box<< d if r.dungeon_id==d.id}
         end
         box
+    end
+
+    def where_at?
+        "#{self.name} is at room #{self.which_room[0].name} in #{self.which_dungeon[0].name}."
     end
 
 end
