@@ -10,25 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_26_153103) do
-
-  create_table "dungeons", force: :cascade do |t|
-    t.string "name"
-    t.integer "pressure"
-  end
-
-  create_table "monsters", force: :cascade do |t|
-    t.string "name"
-    t.integer "hp"
-    t.integer "ac"
-    t.string "trait"
-  end
-
-  create_table "rooms", force: :cascade do |t|
-    t.string "name"
-    t.integer "size"
-    t.integer "dungeon_id"
-    t.integer "monster_id"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end

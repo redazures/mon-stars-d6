@@ -1,4 +1,5 @@
 class Room < ActiveRecord::Base
     belongs_to :dungeon
-    belongs_to :monster
+    belongs_to :player
+    has_many :monster
 end
